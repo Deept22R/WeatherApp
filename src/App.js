@@ -6,7 +6,7 @@ import CityWeather from './components/CityWeather';
 // import CityWeather from "./components/CityWeather";
 function App() {
   const [city, setCity] = React.useState("");
-  const [cityWeather, setCityWeather] = React.useState({});
+  const [cityWeather, setCityWeather] = React.useState();
   const fetchCityWeather = () => {
     fetch(
         `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=e52aa7323d90386c3a70692701e8cf3b`
